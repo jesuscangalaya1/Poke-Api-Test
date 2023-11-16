@@ -1,0 +1,14 @@
+<mat-toolbar class="encabezado">
+
+    <mat-toolbar-row class="cabecera-logo">
+        <a href="/">
+            <img src="assets/logo-header.png" alt="Poke Api">
+        </a>
+    </mat-toolbar-row>
+
+    <div class="busqueda-encabezado">
+        <input type="search" placeholder="Search" name="search" [(ngModel)]="searchValue" (ngModelChange)="onFilterClick()">
+        <button class="search" type="submit" (click)="onFilterClick()"></button>
+    </div>
+
+</mat-toolbar>

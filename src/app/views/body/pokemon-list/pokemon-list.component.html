@@ -1,0 +1,28 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+
+<h1 class="titulo-home">
+    <img src="assets/lista-de-pokemons.png" alt="Lista de Pokémons" class="animate__bounceOut">
+</h1>
+
+<div class="lista-cards">
+  <div *ngFor="let pokemon of pokemonFiltered | slice: (pageIndex - 1) * pageSize : pageIndex * pageSize">
+    <app-cards [pokemon]="pokemon"></app-cards>
+  </div>
+</div>
+
+<mat-paginator
+  [pageSize]="pageSize"
+  [pageIndex]="pageIndex - 1"
+  [length]="pokemonFiltered.length"
+  (page)="onPageChange($event)"
+  class="custom-paginator"
+></mat-paginator>
+
+
+
+
+
+

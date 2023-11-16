@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Press+Start+2P&display=swap');
+
+/* responsividade */
+
+@media screen and (max-width: 1500px) {
+    .titulo-home img {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .titulo-home img {
+        width: 600px;
+    }
+}
+
+.titulo-home img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.lista-cards {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    gap: 20px;
+}
+
+
+.custom-paginator {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Contenedor del paginador */
+.custom-paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Estilo para los botones de navegación */
+.custom-paginator .mat-paginator-navigation-previous,
+.custom-paginator .mat-paginator-navigation-next {
+  color: #3498db; /* Color del texto y las flechas */
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto de color en hover para los botones de navegación */
+.custom-paginator .mat-paginator-navigation-previous:hover,
+.custom-paginator .mat-paginator-navigation-next:hover {
+  color: #2980b9;
+}
+
+/* Estilo para el indicador de página actual */
+.custom-paginator .mat-paginator-page-size-label,
+.custom-paginator .mat-paginator-range-label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilo para la caja de páginas y el control de tamaño de página */
+.custom-paginator .mat-paginator-page-size,
+.custom-paginator .mat-select-arrow,
+.custom-paginator .mat-select-value-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilo para el control de tamaño de página en hover */
+.custom-paginator .mat-paginator-page-size:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilo para los puntos suspensivos */
+.custom-paginator .mat-paginator-ellipsis {
+  color: #333;
+}
+
+/* Estilo para los números de página */
+.custom-paginator .mat-paginator-page-number {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto de color en hover para los números de página */
+.custom-paginator .mat-paginator-page-number:hover {
+  color: #2980b9;
+}
+
+
+
